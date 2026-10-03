@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join a Forked group</title>
+  <link rel="icon" href="/icon.png">
+  <style>
+    :root {
+      --navy: #1a2136;
+      --cream: #fdf9f2;
+      --sand: #f5eee5;
+      --orange: #ff994a;
+      --muted: #5d6475;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--navy);
+      background:
+        radial-gradient(420px 420px at 15% 8%, rgba(92, 189, 255, 0.28), transparent 70%),
+        radial-gradient(420px 420px at 85% 12%, rgba(255, 153, 74, 0.28), transparent 70%),
+        linear-gradient(var(--cream), var(--sand));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+    main { max-width: 420px; width: 100%; text-align: center; }
+    .icon { width: 88px; height: 88px; border-radius: 20px; box-shadow: 0 10px 30px rgba(26, 33, 54, 0.15); }
+    h1 { font-size: 30px; font-weight: 900; margin: 18px 0 8px; }
+    p { color: var(--muted); font-size: 17px; line-height: 1.45; margin: 0 0 22px; }
+    .code { display: flex; gap: 10px; justify-content: center; margin-bottom: 26px; }
+    .code span {
+      width: 60px; height: 72px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 34px; font-weight: 900;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 4px 14px rgba(26, 33, 54, 0.08);
+    }
+    .button {
+      display: block;
+      background: var(--orange);
+      color: white;
+      font-weight: 800;
+      font-size: 18px;
+      padding: 16px;
+      border-radius: 999px;
+      text-decoration: none;
+    }
+    .note { font-size: 14px; margin-top: 18px; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <!-- GitHub Pages serves this page for any unknown path. Invite links
+       (/join/ABCD) normally open the app directly; this is the fallback. -->
+  <main id="invite" hidden>
+    <img class="icon" src="/icon.png" alt="Forked app icon">
+    <h1>You're invited!</h1>
+    <p>Join the group in Forked and swipe on where to eat together.</p>
+    <div class="code" id="code" aria-label="Group code"></div>
+    <a class="button" id="open">Open in Forked</a>
+    <p class="note">Don't have Forked yet? It's coming soon to the App Store. Once you have it, tap <strong>Join with a code</strong> and enter the code above.</p>
+  </main>
+
+  <main id="missing" hidden>
+    <img class="icon" src="/icon.png" alt="Forked app icon">
+    <h1>Page not found</h1>
+    <p>That page doesn't exist.</p>
+    <a class="button" href="/">Go to Forked</a>
+  </main>
+
+  <script>
+    // Accept /join/ABCD or ?code=ABCD, and only ever use 4 letters/digits.
+    function inviteCode() {
+      var fromPath = location.pathname.match(/^\/join\/([A-Za-z0-9]{4})\/?$/);
+      var fromQuery = new URLSearchParams(location.search).get("code");
+      var raw = fromPath ? fromPath[1] : (fromQuery || "");
+      var code = raw.toUpperCase().replace(/[^A-Z0-9]/g, "");
+      return code.length === 4 ? code : null;
+    }
+
+    var code = inviteCode();
+    if (code) {
+      document.getElementById("invite").hidden = false;
+      var tiles = document.getElementById("code");
+      code.split("").forEach(function (letter) {
+        var tile = document.createElement("span");
+        tile.textContent = letter;
+        tiles.appendChild(tile);
+      });
+      document.getElementById("open").href = "forked://join/" + code;
+      document.title = "Join group " + code + " · Forked";
+    } else {
+      document.getElementById("missing").hidden = false;
+    }
+  </script>
+</body>
+</html>
