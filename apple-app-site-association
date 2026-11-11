@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["3PARMB2466.net.kportal.forked"],
+        "components": [
+          { "/": "/join/*", "comment": "Group invites: /join/ABCD" }
+        ]
+      }
+    ]
+  }
+}
