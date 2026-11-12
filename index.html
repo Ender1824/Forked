@@ -2,79 +2,283 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Forked</title>
-  <meta name="description" content="Swipe on Upper Valley restaurants with your crew and find the one you all want.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Forked: decide where to eat, together</title>
+  <meta name="description" content="Can't decide where to eat in the Upper Valley? Swipe on local spots with your crew and find the one you all want.">
+  <meta name="theme-color" content="#fdf9f2">
   <link rel="icon" href="/icon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta property="og:site_name" content="Forked">
-  <meta property="og:title" content="Forked">
+  <meta property="og:title" content="Forked: decide where to eat, together">
   <meta property="og:description" content="Swipe on Upper Valley restaurants with your crew and find the one you all want.">
   <meta property="og:image" content="https://www.forked.kportal.net/invite-preview.png">
+  <meta property="og:url" content="https://www.forked.kportal.net/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
-  <link rel="apple-touch-icon" href="/icon.png">
-  <style>
-    :root {
-      --navy: #1a2136;
-      --cream: #fdf9f2;
-      --sand: #f5eee5;
-      --blue: #5cbdff;
-      --orange: #ff994a;
-      --muted: #5d6475;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--navy);
-      background:
-        radial-gradient(420px 420px at 15% 8%, rgba(92, 189, 255, 0.28), transparent 70%),
-        radial-gradient(420px 420px at 85% 12%, rgba(255, 153, 74, 0.28), transparent 70%),
-        linear-gradient(var(--cream), var(--sand));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 32px 16px;
-    }
-    main { max-width: 440px; width: 100%; text-align: center; }
-    .icon { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(26, 33, 54, 0.15); }
-    h1 { font-size: 48px; font-weight: 900; margin: 20px 0 8px; letter-spacing: -0.5px; }
-    .tagline { font-size: 19px; color: var(--muted); line-height: 1.45; margin: 0 0 28px; }
-    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 28px; }
-    .step {
-      background: rgba(255, 255, 255, 0.75);
-      border: 1px solid rgba(26, 33, 54, 0.06);
-      border-radius: 18px;
-      padding: 14px 8px;
-      font-size: 14px;
-      font-weight: 700;
-    }
-    .step span { display: block; font-size: 24px; margin-bottom: 6px; }
-    .badge {
-      display: inline-block;
-      background: var(--orange);
-      color: white;
-      font-weight: 800;
-      padding: 14px 28px;
-      border-radius: 999px;
-      text-decoration: none;
-    }
-    .note { color: var(--muted); font-size: 14px; margin-top: 14px; }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+  <link rel="stylesheet" href="/styles.css?v=3">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
-  <main>
-    <img class="icon" src="/icon.png" alt="Forked app icon">
-    <h1>Forked</h1>
-    <p class="tagline">Can't decide where to eat in the Upper Valley? Swipe on local spots with your crew and find the one you all want.</p>
-    <div class="steps">
-      <div class="step"><span>🔗</span>Share a link</div>
-      <div class="step"><span>👆</span>Everyone swipes</div>
-      <div class="step"><span>🧡</span>Eat where you match</div>
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/icon.png" alt="">Forked</a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+        <a class="pill small" href="#get">Coming soon</a>
+      </nav>
     </div>
-    <span class="badge">Coming soon to the App Store</span>
-    <p class="note">Lebanon · West Lebanon · Hanover · White River Junction</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow"><span class="dot"></span>Made for the Upper Valley</span>
+          <h1>Where should we eat? <span class="gradient-text">Swipe on it.</span></h1>
+          <p class="lede">Forked turns “I don't know, what do you want?” into a quick game. Everyone swipes on local spots, and the place you all like wins.</p>
+          <div class="actions">
+            <a class="btn primary" href="#get">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+              Coming soon to iPhone
+            </a>
+            <a class="btn ghost" href="#how">See how it works</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong>400+</strong><span>hand-checked spots</span></div>
+            <div class="stat"><strong>36</strong><span>towns in NH &amp; VT</span></div>
+            <div class="stat"><strong>2–8</strong><span>friends per group</span></div>
+          </div>
+        </div>
+
+        <div class="stage" aria-hidden="true">
+          <div class="code-toast">Group code<div class="tiles"><b>H</b><b>N</b><b>V</b><b>R</b></div></div>
+          <div class="phone">
+            <div class="screen">
+              <div class="island"></div>
+              <div class="status"><span>6:42</span><span>●●●</span></div>
+              <div class="app-bar">
+                <div class="title"><img src="/icon.png" alt="">Forked</div>
+                <div class="avatars">
+                  <i style="background:#5cbdff">A</i><i style="background:#ff994a">J</i><i style="background:#b3a3eb">M</i><i style="background:#34c759">S</i>
+                </div>
+              </div>
+              <div class="deck">
+                <article class="card back2">
+                  <div class="photo"><img src="/img/salt-hill.jpg" alt=""></div>
+                  <div class="info"><h3>Salt Hill Pub</h3><div class="meta">Irish pub · Lebanon</div></div>
+                </article>
+                <article class="card back1">
+                  <div class="photo"><img src="/img/murphys.jpg" alt=""></div>
+                  <div class="info">
+                    <h3>Murphy's on the Green</h3>
+                    <div class="meta">Pub · Hanover · 0.1 mi</div>
+                    <div class="chips"><span class="chip">Pub fare</span></div>
+                  </div>
+                </article>
+                <article class="card front">
+                  <div class="photo">
+                    <img src="/img/dirt-cowboy.jpg" alt="">
+                    <span class="stamp yum">YUM</span>
+                  </div>
+                  <div class="info">
+                    <h3>Dirt Cowboy Cafe</h3>
+                    <div class="meta">Café · Hanover · 0.2 mi</div>
+                    <div class="chips"><span class="chip open">Open now</span><span class="chip">Coffee &amp; pastries</span></div>
+                  </div>
+                </article>
+              </div>
+              <div class="swipe-buttons">
+                <span class="round nah"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+                <span class="round yum"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.9 4.5c2.2 0 3.6 1.2 5.1 3 1.5-1.8 2.9-3 5.1-3 3.9 0 6 3.9 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg></span>
+              </div>
+            </div>
+          </div>
+          <div class="match-toast"><span class="heart">♥</span><div>It's a match!<small>All 4 of you liked Dirt Cowboy</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="kicker">How it works</div>
+          <h2>Dinner, decided in a minute</h2>
+          <p>No group chat debates, no “I'm fine with anything.” Just swipe.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="num">1</div>
+            <h3>Start a group</h3>
+            <p>Choose restaurants or dishes and how far you'll go. Share the 4-letter code, or send a link that drops friends right in.</p>
+          </div>
+          <div class="step reveal">
+            <div class="num">2</div>
+            <h3>Everyone swipes</h3>
+            <p>Right for yum, left for nah. Each phone gets the spots in its own shuffled order, so nobody sways anybody.</p>
+          </div>
+          <div class="step reveal">
+            <div class="num">3</div>
+            <h3>Eat where you match</h3>
+            <p>When everyone likes a place, it's a match. See the favorites, then tap for hours, the menu and directions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="kicker">Why Forked</div>
+          <h2>Built for how friends actually pick</h2>
+        </div>
+        <div class="features">
+          <div class="feature reveal">
+            <div class="icon">✅</div>
+            <h3>Hand-checked spots</h3>
+            <p>Every Upper Valley listing was reviewed by hand, so no pharmacies, caterers or delivery-only brands sneak into your deck.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">🍜</div>
+            <h3>Restaurants or cravings</h3>
+            <p>Not sure where? Swipe on pizza, pho or tacos instead, and Forked shows the nearby places that serve your match.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">🌲</div>
+            <h3>Local first</h3>
+            <p>Diners, cafés, pubs and creemee stands come before chains. Flip on “Local spots only” to skip chains entirely.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">🕒</div>
+            <h3>Hours, menus, directions</h3>
+            <p>Cards show what's open now, and each match links to its menu, website, phone and directions.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">📶</div>
+            <h3>Phones talk directly</h3>
+            <p>Your group connects over Wi-Fi and Bluetooth, made for when you're all in the same room or car.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="icon">🙅</div>
+            <h3>No sign-ups</h3>
+            <p>No accounts, no passwords, no ads. Type your first name and start swiping.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="towns">
+      <div class="wrap">
+        <div class="towns-band reveal">
+          <h2>From Hanover to Claremont</h2>
+          <p>A guide to over 400 restaurants, cafés, bakeries and breweries across the Upper Valley of New Hampshire and Vermont.</p>
+          <ul class="town-list">
+            <li>Hanover</li><li>Lebanon</li><li>West Lebanon</li><li>White River Junction</li><li>Norwich</li>
+            <li>Quechee</li><li>Woodstock</li><li>Enfield</li><li>Canaan</li><li>Lyme</li><li>Fairlee</li>
+            <li>Bradford</li><li>South Royalton</li><li>Randolph</li><li>Windsor</li><li>Claremont</li>
+            <li>Newport</li><li>New London</li><li>Sunapee</li><li class="more">+ more</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="kicker">FAQ</div>
+          <h2>Good questions</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal">
+            <summary>When can I get Forked?</summary>
+            <p>Forked is in testing now and is coming soon to the App Store for iPhone.</p>
+          </details>
+          <details class="reveal">
+            <summary>Does everyone need the app?</summary>
+            <p>Yes. Each person swipes on their own iPhone. Friends join with your link or 4-letter code, and need to be nearby with Wi-Fi and Bluetooth turned on.</p>
+          </details>
+          <details class="reveal">
+            <summary>What counts as a match?</summary>
+            <p>A place everyone in the group liked. If nothing gets a unanimous yes, Forked still ranks the spots with the most likes so you can settle it fast.</p>
+          </details>
+          <details class="reveal">
+            <summary>Does it work outside the Upper Valley?</summary>
+            <p>Yes. Outside the area, Forked finds restaurants near you with Apple Maps. Inside it, you get the hand-checked guide.</p>
+          </details>
+          <details class="reveal">
+            <summary>A place is missing or wrong. How do I tell you?</summary>
+            <p>Email <a href="mailto:universe@kportal.net?subject=Forked%20listing">universe@kportal.net</a> with the place's name and town. The Upper Valley guide is checked by hand, so fixes get looked at by a person.</p>
+          </details>
+          <details class="reveal">
+            <summary>What happens to my location?</summary>
+            <p>It's only used to pick the search area, which the phones in your group see. There are no Forked accounts or servers. <a href="/privacy.html">Read the privacy policy</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="get">
+      <div class="wrap">
+        <div class="cta reveal">
+          <img src="/icon.png" alt="Forked app icon">
+          <h2>Dinner, <span class="gradient-text">decided.</span></h2>
+          <p>Forked is coming soon to the App Store for iPhone.</p>
+          <span class="btn dark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+            Coming soon to iPhone
+          </span>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="row">
+        <a class="brand" href="/"><img src="/icon.png" alt="">Forked</a>
+        <nav aria-label="Footer">
+          <a href="#how">How it works</a>
+          <a href="#faq">FAQ</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="mailto:universe@kportal.net">Contact</a>
+        </nav>
+      </div>
+      <div class="row"><span>© 2026 Forked. Made in the Upper Valley.</span><a href="mailto:universe@kportal.net">universe@kportal.net</a></div>
+      <p class="credits">
+        Place data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, reviewed by hand.
+        Photos via Wikimedia Commons:
+        <a href="https://commons.wikimedia.org/wiki/File:Dirt_Cowboy_Cafe_7_South_Main_Street_downtown_Hanover_NH_July_2023.jpg">Dirt Cowboy Cafe</a> and
+        <a href="https://commons.wikimedia.org/wiki/File:Salt_Hill_Pub_West_Park_Street_downtown_Lebanon_NH_June_2016.jpg">Salt Hill Pub</a> by Artaxerxes,
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>;
+        <a href="https://commons.wikimedia.org/wiki/File:Murphy%27s_On_the_Green,_Hanover,_New_Hampshire.jpg">Murphy's on the Green</a> by Kenneth C. Zirkel,
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Photos are resized.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Nav gets a hairline once you scroll.
+    var nav = document.getElementById("nav");
+    function onScroll() { nav.classList.toggle("scrolled", window.scrollY > 8); }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    // Fade sections in as they scroll into view.
+    var items = document.querySelectorAll(".reveal");
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+        });
+      }, { rootMargin: "0px 0px -8% 0px" });
+      items.forEach(function (el) { io.observe(el); });
+    } else {
+      items.forEach(function (el) { el.classList.add("in"); });
+    }
+  </script>
 </body>
 </html>
