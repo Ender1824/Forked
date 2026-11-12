@@ -2,86 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Join a Forked group</title>
+  <meta name="theme-color" content="#fdf9f2">
   <link rel="icon" href="/icon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <!-- Link previews in Messages, Slack, etc. -->
   <meta property="og:site_name" content="Forked">
-  <meta property="og:title" content="You're invited to a Forked group">
+  <meta property="og:title" content="Get Forked! You're invited to a group">
   <meta property="og:description" content="Swipe on where to eat together. Tap to join in the Forked app.">
   <meta property="og:image" content="https://www.forked.kportal.net/invite-preview.png">
   <meta property="og:image:width" content="600">
   <meta property="og:image:height" content="600">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
-  <style>
-    :root {
-      --navy: #1a2136;
-      --cream: #fdf9f2;
-      --sand: #f5eee5;
-      --orange: #ff994a;
-      --muted: #5d6475;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--navy);
-      background:
-        radial-gradient(420px 420px at 15% 8%, rgba(92, 189, 255, 0.28), transparent 70%),
-        radial-gradient(420px 420px at 85% 12%, rgba(255, 153, 74, 0.28), transparent 70%),
-        linear-gradient(var(--cream), var(--sand));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 32px 16px;
-    }
-    main { max-width: 420px; width: 100%; text-align: center; }
-    .icon { width: 88px; height: 88px; border-radius: 20px; box-shadow: 0 10px 30px rgba(26, 33, 54, 0.15); }
-    h1 { font-size: 30px; font-weight: 900; margin: 18px 0 8px; }
-    p { color: var(--muted); font-size: 17px; line-height: 1.45; margin: 0 0 22px; }
-    .code { display: flex; gap: 10px; justify-content: center; margin-bottom: 26px; }
-    .code span {
-      width: 60px; height: 72px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 34px; font-weight: 900;
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 4px 14px rgba(26, 33, 54, 0.08);
-    }
-    .button {
-      display: block;
-      background: var(--orange);
-      color: white;
-      font-weight: 800;
-      font-size: 18px;
-      padding: 16px;
-      border-radius: 999px;
-      text-decoration: none;
-    }
-    .note { font-size: 14px; margin-top: 18px; }
-    [hidden] { display: none !important; }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+  <link rel="stylesheet" href="/styles.css?v=3">
 </head>
 <body>
   <!-- GitHub Pages serves this page for any unknown path. Invite links
        (/join/ABCD) normally open the app directly; this is the fallback. -->
-  <main id="invite" hidden>
-    <img class="icon" src="/icon.png" alt="Forked app icon">
-    <h1>You're invited!</h1>
-    <p>Join the group in Forked and swipe on where to eat together.</p>
-    <div class="code" id="code" aria-label="Group code"></div>
-    <a class="button" id="open">Open in Forked</a>
-    <p class="note">Don't have Forked yet? It's coming soon to the App Store. Once you have it, tap <strong>Join with a code</strong> and enter the code above.</p>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/icon.png" alt="">Forked</a>
+      <nav class="nav-links" aria-label="Main"><a class="pill small" href="/">About Forked</a></nav>
+    </div>
+  </header>
+
+  <main class="solo">
+    <div class="panel" id="invite" hidden>
+      <img class="app-icon" src="/icon.png" alt="Forked app icon">
+      <h1>Get <span class="gradient-text">Forked!</span></h1>
+      <p class="sub">You're invited. Your friends are picking where to eat, so join the group and start swiping.</p>
+      <div class="code-tiles" id="code" aria-label="Group code"></div>
+      <div class="code-label">Group code</div>
+      <div class="buttons">
+        <a class="btn primary" id="open">Open in Forked</a>
+        <button class="btn ghost" id="copy" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="3"/><path d="M5 15V6a3 3 0 0 1 3-3h7"/></svg>
+          Copy code
+        </button>
+      </div>
+      <div class="how-join">
+        <div class="title">Don't have Forked yet?</div>
+        <ol>
+          <li><span>Forked is coming soon to the App Store for iPhone.</span></li>
+          <li><span>Once it's installed, tap <strong>Join with a code</strong>.</span></li>
+          <li><span>Enter the code above. Stay nearby with Wi-Fi and Bluetooth on.</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="panel" id="missing" hidden>
+      <img class="app-icon" src="/icon.png" alt="Forked app icon">
+      <h1>Wrong turn</h1>
+      <p class="sub">This page took a fork in the road. If someone sent you an invite, check that the link ends with a 4-letter code, like <strong>/join/ABCD</strong>.</p>
+      <div class="buttons"><a class="btn primary" href="/">Go to Forked</a></div>
+      <p class="sub" style="font-size:14px;margin-top:18px">Still stuck? Email <a href="mailto:universe@kportal.net">universe@kportal.net</a>.</p>
+    </div>
   </main>
 
-  <main id="missing" hidden>
-    <img class="icon" src="/icon.png" alt="Forked app icon">
-    <h1>Page not found</h1>
-    <p>That page doesn't exist.</p>
-    <a class="button" href="/">Go to Forked</a>
-  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script>
     // Accept /join/ABCD or ?code=ABCD, and only ever use 4 letters/digits.
@@ -91,6 +74,14 @@
       var raw = fromPath ? fromPath[1] : (fromQuery || "");
       var code = raw.toUpperCase().replace(/[^A-Z0-9]/g, "");
       return code.length === 4 ? code : null;
+    }
+
+    function showToast(text) {
+      var toast = document.getElementById("toast");
+      toast.textContent = text;
+      toast.classList.add("show");
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(function () { toast.classList.remove("show"); }, 1800);
     }
 
     var code = inviteCode();
@@ -104,8 +95,18 @@
       });
       document.getElementById("open").href = "forked://join/" + code;
       document.title = "Join group " + code + " · Forked";
+
+      document.getElementById("copy").addEventListener("click", function () {
+        var done = function () { showToast("Code " + code + " copied"); };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(code).then(done, function () { showToast("Code: " + code); });
+        } else {
+          showToast("Code: " + code);
+        }
+      });
     } else {
       document.getElementById("missing").hidden = false;
+      document.title = "Page not found · Forked";
     }
   </script>
 </body>
