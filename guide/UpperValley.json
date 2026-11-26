@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated": "2026-11-25T15:30:29Z",
+ "generated": "2026-11-26T17:40:46Z",
  "curated": true,
  "attribution": "Restaurant data © OpenStreetMap contributors, ODbL.",
  "bbox": [
@@ -79,23 +79,6 @@
    "image": "https://images.squarespace-cdn.com/content/v1/60ec5077e61fb265d7e3e8ea/1627740189381-U6TXW8MOLRAVRFM5MME1/IMG_9706.jpg?format=2500w"
   },
   {
-   "id": "apple:the cafe@43.83175,-72.63375",
-   "name": "The Cafe",
-   "lat": 43.8317464,
-   "lon": -72.6337499,
-   "address": "269 Main St, Bethel",
-   "town": "Bethel",
-   "phone": "+1 (802) 234-9910",
-   "website": "https://www.facebook.com/thecafeat269main/",
-   "menu": null,
-   "hours": null,
-   "cuisine": "café",
-   "dish": "coffee",
-   "features": null,
-   "chain": false,
-   "image": null
-  },
-  {
    "id": "apple:tozier restaurant@43.80499,-72.66486",
    "name": "Tozier's Restaurant",
    "lat": 43.8049907,
@@ -148,10 +131,10 @@
   },
   {
    "id": "osm:node/7835358100",
-   "name": "Hungry Bear Restaurant",
-   "lat": 43.982127,
-   "lon": -72.12138,
-   "address": "Bradford",
+   "name": "Hungry Bear Pub & Grill",
+   "lat": 43.982121,
+   "lon": -72.1215519,
+   "address": "776 Lower Plain, Bradford",
    "town": "Bradford",
    "phone": "+1 (802) 222-5288",
    "website": "http://www.hungrybearpubandgrill.com",
@@ -199,7 +182,7 @@
   },
   {
    "id": "apple:the little grille@43.99239,-72.12805",
-   "name": "The Little Grille",
+   "name": "The Little Grille at the Mill",
    "lat": 43.9923938,
    "lon": -72.1280497,
    "address": "48 Main Street, Bradford",
@@ -392,9 +375,9 @@
   {
    "id": "osm:way/911611013",
    "name": "Domino's",
-   "lat": 43.371581,
-   "lon": -72.326095,
-   "address": "216 Washington Street, Claremont",
+   "lat": 43.3761332,
+   "lon": -72.334207,
+   "address": "54 Washington St, Claremont",
    "town": "Claremont",
    "phone": "+1 603-542-3333",
    "website": "https://pizza.dominos.com/new-hampshire/claremont/216-washington-st",
@@ -449,9 +432,9 @@
   {
    "id": "osm:node/7179683207",
    "name": "Dunkin'",
-   "lat": 43.404404,
-   "lon": -72.41116,
-   "address": "258 VT-131, Springfield",
+   "lat": 43.4044109,
+   "lon": -72.41122,
+   "address": "100 VT-131, Ascutney",
    "town": "Claremont",
    "phone": "+1 (802) 674-2397",
    "website": "https://locations.dunkindonuts.com/en/vt/ascutney/100-rt-131/340762",
@@ -674,23 +657,6 @@
    "image": null
   },
   {
-   "id": "apple:remix coffee bar and social club@43.37243,-72.33871",
-   "name": "Remix Coffee Bar and Social Club",
-   "lat": 43.3724335,
-   "lon": -72.3387107,
-   "address": "1 Pleasant St, Unit 102, Claremont",
-   "town": "Claremont",
-   "phone": "+1 (603) 826-3979",
-   "website": "https://www.yelp.com/biz/remix-coffee-bar-and-social-club-claremont",
-   "menu": null,
-   "hours": null,
-   "cuisine": "café",
-   "dish": "coffee",
-   "features": null,
-   "chain": false,
-   "image": null
-  },
-  {
    "id": "osm:node/8464449713",
    "name": "Subway",
    "lat": 43.379976,
@@ -781,7 +747,7 @@
   },
   {
    "id": "apple:time out sports bar and grille@43.36901,-72.34514",
-   "name": "Time Out Sports Bar and Grille",
+   "name": "Time-Out Americana Grill",
    "lat": 43.3690116,
    "lon": -72.3451395,
    "address": "101 Mulberry St, Claremont",
@@ -1111,23 +1077,6 @@
    ],
    "chain": false,
    "image": "https://www.ledaspizza.com/assets/storefront.jpg"
-  },
-  {
-   "id": "apple:patriot fuels convenience sub & pizza@43.90816,-72.14092",
-   "name": "Patriot Fuels Convenience Sub & Pizza",
-   "lat": 43.9081593,
-   "lon": -72.1409158,
-   "address": "512 US Hwy 5 N, Fairlee",
-   "town": "Fairlee",
-   "phone": "+1 (802) 333-3500",
-   "website": null,
-   "menu": null,
-   "hours": null,
-   "cuisine": "pizza",
-   "dish": "pizza",
-   "features": null,
-   "chain": false,
-   "image": null
   },
   {
    "id": "apple:peyton place restaurant@43.89807,-72.14515",
@@ -1473,7 +1422,7 @@
   },
   {
    "id": "osm:node/416661181",
-   "name": "Lou's Bakery and Restaurant",
+   "name": "Lou's Restaurant & Bakery",
    "lat": 43.701526,
    "lon": -72.289171,
    "address": "30 South Main Street, Hanover",
@@ -1694,7 +1643,7 @@
   },
   {
    "id": "osm:node/13687412054",
-   "name": "Still North Cafe",
+   "name": "Still North Books & Bar",
    "lat": 43.701569,
    "lon": -72.290078,
    "address": "3 Allen St, Hanover",
@@ -1832,23 +1781,6 @@
    "hours": "Mo-Th 11:00-22:00; Fr-Sa 11:00-22:30; Su 11:30-21:00",
    "cuisine": "thai",
    "dish": "thai",
-   "features": null,
-   "chain": false,
-   "image": null
-  },
-  {
-   "id": "osm:way/693114387",
-   "name": "Umpleby's Bakehouse",
-   "lat": 43.699913,
-   "lon": -72.288692,
-   "address": "3 South Street, Hanover",
-   "town": "Hanover",
-   "phone": "+1-603-643-3030",
-   "website": "https://umplebys.com/",
-   "menu": null,
-   "hours": null,
-   "cuisine": "café",
-   "dish": "coffee",
    "features": null,
    "chain": false,
    "image": null
@@ -2103,23 +2035,6 @@
    "image": null
   },
   {
-   "id": "osm:node/615056012",
-   "name": "Lebanon Village Pizza",
-   "lat": 43.642984,
-   "lon": -72.253775,
-   "address": "45 Hanover St, Lebanon",
-   "town": "Lebanon",
-   "phone": "+1-603-448-1000",
-   "website": "https://village-pizza-grill.com/",
-   "menu": null,
-   "hours": null,
-   "cuisine": "pizza",
-   "dish": "pizza",
-   "features": null,
-   "chain": false,
-   "image": null
-  },
-  {
    "id": "osm:way/565098089",
    "name": "Lucky's Coffee Garage",
    "lat": 43.643201,
@@ -2361,23 +2276,6 @@
    "image": "none"
   },
   {
-   "id": "apple:the bistro@43.67485,-72.25833",
-   "name": "The Bistro",
-   "lat": 43.6748482,
-   "lon": -72.2583307,
-   "address": "10 Morgan Dr, Lebanon",
-   "town": "Lebanon",
-   "phone": "+1 (603) 643-5600",
-   "website": "https://www.marriott.com/en-us/hotels/lebcy-courtyard-hanover-lebanon/dining/",
-   "menu": null,
-   "hours": null,
-   "cuisine": "bistro",
-   "dish": "other",
-   "features": null,
-   "chain": false,
-   "image": "none"
-  },
-  {
    "id": "osm:way/546394048",
    "name": "The Fort at Exit 18",
    "lat": 43.650588,
@@ -2449,6 +2347,23 @@
    "image": "https://img1.wsimg.com/isteam/stock/18544/:/"
   },
   {
+   "id": "osm:node/615056012",
+   "name": "Village Pizza and Grill",
+   "lat": 43.642984,
+   "lon": -72.253775,
+   "address": "45 Hanover St, Lebanon",
+   "town": "Lebanon",
+   "phone": "+1-603-448-1000",
+   "website": "https://village-pizza-grill.com/",
+   "menu": null,
+   "hours": null,
+   "cuisine": "pizza",
+   "dish": "pizza",
+   "features": null,
+   "chain": false,
+   "image": null
+  },
+  {
    "id": "osm:node/9035733565",
    "name": "Ariana's Restaurant",
    "lat": 43.809875,
@@ -2469,8 +2384,25 @@
    "image": "https://arianasrestaurant.com/wp-content/uploads/2026/02/IMG_9724.jpg"
   },
   {
+   "id": "apple:thirty trails cafe@43.78769,-72.09953",
+   "name": "Skiway Cafe - Wicked Tasty",
+   "lat": 43.7876949,
+   "lon": -72.0995292,
+   "address": "39 Grafton Tpke, Lyme",
+   "town": "Lyme",
+   "phone": "+1 (603) 795-2143",
+   "website": "https://www.facebook.com/ThirtyTrails/",
+   "menu": null,
+   "hours": null,
+   "cuisine": "café",
+   "dish": "coffee",
+   "features": null,
+   "chain": false,
+   "image": null
+  },
+  {
    "id": "osm:node/581959173",
-   "name": "Stella's Italian Kitchen & Market",
+   "name": "Stella's Italian Kitchen & Cafe",
    "lat": 43.81112,
    "lon": -72.158151,
    "address": "5 Main Street, Lyme",
@@ -2488,42 +2420,8 @@
    "image": null
   },
   {
-   "id": "apple:thirty trails cafe@43.78769,-72.09953",
-   "name": "Thirty Trails Cafe",
-   "lat": 43.7876949,
-   "lon": -72.0995292,
-   "address": "39 Grafton Tpke, Lyme",
-   "town": "Lyme",
-   "phone": "+1 (603) 795-2143",
-   "website": "https://www.facebook.com/ThirtyTrails/",
-   "menu": null,
-   "hours": null,
-   "cuisine": "café",
-   "dish": "coffee",
-   "features": null,
-   "chain": false,
-   "image": null
-  },
-  {
-   "id": "apple:wicked awesome bbq@43.81090,-72.18966",
-   "name": "Wicked Awesome BBQ",
-   "lat": 43.8109037,
-   "lon": -72.1896582,
-   "address": "2945 US-5, East Thetford",
-   "town": "Lyme",
-   "phone": "+1 (603) 729-6213",
-   "website": null,
-   "menu": null,
-   "hours": null,
-   "cuisine": "bbq",
-   "dish": "bbq",
-   "features": null,
-   "chain": false,
-   "image": null
-  },
-  {
    "id": "osm:node/6981257839",
-   "name": "Meriden Deli",
+   "name": "Meriden Deli Mart",
    "lat": 43.540889,
    "lon": -72.25676,
    "address": "809 NH-120, Meriden",
@@ -2786,23 +2684,6 @@
    "image": "https://images.squarespace-cdn.com/content/v1/64764b92c688ff427be5222f/4d2e2f58-c34a-4644-84a8-aeed82eb64a9/TNLI_152.jpg?format=2500w"
   },
   {
-   "id": "apple:traditions restaurant at lake sunapee@43.40159,-71.94612",
-   "name": "Traditions Restaurant At Lake Sunapee",
-   "lat": 43.4015909,
-   "lon": -71.9461185,
-   "address": "100 Country Club Ln, New London",
-   "town": "New London",
-   "phone": "+1 (603) 526-0260",
-   "website": null,
-   "menu": null,
-   "hours": null,
-   "cuisine": "restaurant",
-   "dish": "other",
-   "features": null,
-   "chain": false,
-   "image": null
-  },
-  {
    "id": "osm:way/272696572",
    "name": "Tucker's",
    "lat": 43.416364,
@@ -2838,7 +2719,7 @@
   },
   {
    "id": "osm:node/1841757555",
-   "name": "Salt Hill Shanty",
+   "name": "Salt Hill Pub Shanty",
    "lat": 43.340895,
    "lon": -72.067272,
    "address": "1407 NH-103, Newbury",
@@ -2931,25 +2812,8 @@
    "image": "none"
   },
   {
-   "id": "apple:fork up ahead@43.37214,-72.15900",
-   "name": "Fork Up Ahead",
-   "lat": 43.3721407,
-   "lon": -72.1590013,
-   "address": "284 Sunapee St, Newport",
-   "town": "Newport",
-   "phone": "+1 (603) 504-2282",
-   "website": "https://www.yelp.com/biz/fork-up-ahead-sunapee",
-   "menu": null,
-   "hours": null,
-   "cuisine": "restaurant",
-   "dish": "other",
-   "features": null,
-   "chain": false,
-   "image": null
-  },
-  {
    "id": "apple:henry garden cafe@43.35924,-72.18492",
-   "name": "Henry’s Garden Cafe",
+   "name": "Henry's Cafe",
    "lat": 43.3592365,
    "lon": -72.184916,
    "address": "146 Elm St, Newport",
@@ -3030,6 +2894,23 @@
    "hours": null,
    "cuisine": "chinese",
    "dish": "chinese",
+   "features": null,
+   "chain": false,
+   "image": null
+  },
+  {
+   "id": "apple:village pizza of newport@43.36281,-72.17217",
+   "name": "Newport Village Pizza",
+   "lat": 43.3628091,
+   "lon": -72.1721667,
+   "address": "7 S Main St, Newport",
+   "town": "Newport",
+   "phone": "+1 (603) 863-3400",
+   "website": "http://www.villagepizza.net",
+   "menu": null,
+   "hours": null,
+   "cuisine": "pizza",
+   "dish": "pizza",
    "features": null,
    "chain": false,
    "image": null
@@ -3224,23 +3105,6 @@
    "hours": null,
    "cuisine": "mexican",
    "dish": "tacos",
-   "features": null,
-   "chain": false,
-   "image": null
-  },
-  {
-   "id": "apple:village pizza of newport@43.36281,-72.17217",
-   "name": "Village Pizza of Newport",
-   "lat": 43.3628091,
-   "lon": -72.1721667,
-   "address": "7 S Main St, Newport",
-   "town": "Newport",
-   "phone": "+1 (603) 863-3400",
-   "website": "http://www.villagepizza.net",
-   "menu": null,
-   "hours": null,
-   "cuisine": "pizza",
-   "dish": "pizza",
    "features": null,
    "chain": false,
    "image": null
@@ -3582,23 +3446,6 @@
    "image": "https://img1.wsimg.com/isteam/ip/6d65dded-86c8-4f65-aaa9-e41c3ad19a88/ols/IMG_9634.jpeg"
   },
   {
-   "id": "apple:vermont snack shack@43.63796,-72.39748",
-   "name": "Vermont Snack Shack",
-   "lat": 43.6379627,
-   "lon": -72.3974765,
-   "address": "5571 Woodstock Rd, White River Junction",
-   "town": "Quechee",
-   "phone": "+1 (802) 280-4188",
-   "website": null,
-   "menu": null,
-   "hours": null,
-   "cuisine": "restaurant",
-   "dish": "other",
-   "features": null,
-   "chain": false,
-   "image": null
-  },
-  {
    "id": "apple:chester chicken@43.94440,-72.62488",
    "name": "Chester’s Chicken",
    "lat": 43.9443969,
@@ -3686,23 +3533,6 @@
    ],
    "chain": true,
    "image": "none"
-  },
-  {
-   "id": "apple:oak & iron@43.92258,-72.66426",
-   "name": "Oak & Iron",
-   "lat": 43.9225822,
-   "lon": -72.6642582,
-   "address": "21 Merchants Row, Randolph",
-   "town": "Randolph",
-   "phone": "+1 (802) 565-4009",
-   "website": "https://oakironvt.com",
-   "menu": null,
-   "hours": null,
-   "cuisine": "restaurant",
-   "dish": "other",
-   "features": null,
-   "chain": false,
-   "image": "https://img1.wsimg.com/isteam/ip/8280a2bf-147b-4427-9831-88e82107ef59/OakandIron-2.jpg"
   },
   {
    "id": "apple:prince street cafe@43.92628,-72.66479",
@@ -3825,7 +3655,7 @@
   },
   {
    "id": "apple:windy lane bakery@43.92297,-72.66473",
-   "name": "Windy Lane Bakery",
+   "name": "Windy Lane Bakehouse",
    "lat": 43.9229657,
    "lon": -72.6647265,
    "address": "15 N Main St, Randolph",
@@ -3842,7 +3672,7 @@
   },
   {
    "id": "apple:northbound snack@43.78092,-72.46798",
-   "name": "Northbound Snack",
+   "name": "Northbound Snack Co.",
    "lat": 43.7809217,
    "lon": -72.4679767,
    "address": "5774 VT-14, Sharon",
@@ -3943,6 +3773,23 @@
    "image": "none"
   },
   {
+   "id": "osm:node/3584226605",
+   "name": "Royalton Village Pizza",
+   "lat": 43.825696,
+   "lon": -72.565761,
+   "address": "5789 VT-14, South Royalton",
+   "town": "South Royalton",
+   "phone": "+1 (802) 763-2800",
+   "website": "https://www.facebook.com/Royalton-Village-Pizza-113836808647675",
+   "menu": null,
+   "hours": null,
+   "cuisine": "pizza",
+   "dish": "pizza",
+   "features": null,
+   "chain": false,
+   "image": null
+  },
+  {
    "id": "apple:upper pass beer company@43.82017,-72.52205",
    "name": "Upper Pass Beer Company",
    "lat": 43.8201681,
@@ -3958,23 +3805,6 @@
    "features": null,
    "chain": false,
    "image": "https://images.squarespace-cdn.com/content/v1/5dc6cae7031296316659ec13/1bdef8c1-2635-4ea3-a4f3-a703b172ed3b/UpperPassD1-19.jpg?format=2500w"
-  },
-  {
-   "id": "osm:node/3584226605",
-   "name": "Village Pizza",
-   "lat": 43.825696,
-   "lon": -72.565761,
-   "address": "5789 VT-14, South Royalton",
-   "town": "South Royalton",
-   "phone": "+1 (802) 763-2800",
-   "website": "https://www.facebook.com/Royalton-Village-Pizza-113836808647675",
-   "menu": null,
-   "hours": null,
-   "cuisine": "pizza",
-   "dish": "pizza",
-   "features": null,
-   "chain": false,
-   "image": null
   },
   {
    "id": "osm:way/590268791",
@@ -4282,23 +4112,6 @@
    "image": "https://images.squarespace-cdn.com/content/v1/52e11ca2e4b03a73a07ee297/1762836368748-P5OU1HLEQWBQ4O2HPGP2/TheBoxBajaTacosFoodTruckEvent-AllImages-0061.jpg"
   },
   {
-   "id": "apple:tug mountain pizza@43.77940,-72.25826",
-   "name": "Tug Mountain Pizza",
-   "lat": 43.7793963,
-   "lon": -72.2582576,
-   "address": "742 VT-132, Norwich",
-   "town": "Thetford",
-   "phone": "+1 (802) 649-6250",
-   "website": "https://sweetlandfarmvt.com",
-   "menu": null,
-   "hours": null,
-   "cuisine": "pizza",
-   "dish": "pizza",
-   "features": null,
-   "chain": false,
-   "image": "https://sweetlandfarmvt.com/wp-content/uploads/2024/06/sweetland-farm-vt-homepage.jpg"
-  },
-  {
    "id": "osm:node/7179683204",
    "name": "Subway",
    "lat": 43.404615,
@@ -4335,25 +4148,6 @@
    ],
    "chain": true,
    "image": "none"
-  },
-  {
-   "id": "osm:way/921868756",
-   "name": "4 Aces Diner",
-   "lat": 43.650173,
-   "lon": -72.312317,
-   "address": "23 Bridge Street, West Lebanon",
-   "town": "West Lebanon",
-   "phone": "+1-603-298-5515",
-   "website": "https://4acesdiner.com/",
-   "menu": null,
-   "hours": "Th-Tu 07:00-14:00",
-   "cuisine": "american",
-   "dish": "other",
-   "features": [
-    "Takeout"
-   ],
-   "chain": false,
-   "image": "https://images.squarespace-cdn.com/content/v1/6a2830cd35a83f25a31a659a/9372d526-9cc0-47a9-813c-9cc7cca94ab7/caption.jpg?format=2500w"
   },
   {
    "id": "osm:way/265236658",
@@ -4575,6 +4369,25 @@
    ],
    "chain": true,
    "image": "none"
+  },
+  {
+   "id": "osm:way/921868756",
+   "name": "Four Aces Diner",
+   "lat": 43.650173,
+   "lon": -72.312317,
+   "address": "23 Bridge Street, West Lebanon",
+   "town": "West Lebanon",
+   "phone": "+1-603-298-5515",
+   "website": "https://4acesdiner.com/",
+   "menu": null,
+   "hours": "Th-Tu 07:00-14:00",
+   "cuisine": "american",
+   "dish": "other",
+   "features": [
+    "Takeout"
+   ],
+   "chain": false,
+   "image": "https://images.squarespace-cdn.com/content/v1/6a2830cd35a83f25a31a659a/9372d526-9cc0-47a9-813c-9cc7cca94ab7/caption.jpg?format=2500w"
   },
   {
    "id": "apple:garden court@43.62929,-72.31757",
@@ -5368,7 +5181,7 @@
   },
   {
    "id": "osm:way/1133008068",
-   "name": "Frazer Place",
+   "name": "Frazer's Place",
    "lat": 43.495506,
    "lon": -72.388133,
    "address": "2066 U.S. Route 5 North, Windsor",
